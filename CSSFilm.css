@@ -1,0 +1,185 @@
+﻿/* Une petite pitié pour nos yeux */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Paramètres du Background */
+
+
+body{
+    background-color: rgb(16, 22, 83);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	font-family: 'Montserrat',sans-serif;
+	font-size:12px;
+}
+
+#NavBar{
+	color: rgb(216, 216, 216);
+	margin-left: 10px;
+}
+
+/*paramètre du titre du site*/
+
+.SiteTitle{
+	font-family: 'Montserrat',sans-serif;
+
+}
+
+/* Paramètres du menu Nav horizontal */
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+.NavBarSettings{
+    position: fixed;
+    display: flex;
+	text-align:center;
+    background-color: rgb(0, 0, 0);
+    right: 10%;
+	left: 10%;
+	top: 0px;
+	flex-direction: row;
+}
+
+.NavMenuTitleLeft{
+    display: flex;
+	text-align: center;
+	flex-direction: row;
+    color: rgb(216, 216, 216);
+	justify-content: flex-end;
+
+}
+
+.NavMenuTitleRight{
+    display: flex;
+	text-align: center;
+	flex-direction: row;
+    color: rgb(216, 216, 216);
+	justify-content: space-around;
+}
+
+/*Paramètre nav verticale*/
+
+.VertNavSettings{
+	display:flex;
+	text-align: center;
+	flex-direction: column;
+	left: 10%;
+	top: 80px;
+	padding: 10px;
+	width: 60px;
+	background-color: black;
+	font-size: 10px;
+}
+
+.VertMenu{
+	display: block;
+	background-color: #000000;
+	color:white;
+}
+
+
+/* Ancien système pour faire apparaitre le lien, devait mettre current nav bar sur le menu sur laquelle on
+y était actuellement pour chaque page. remplacé par les liens plus bas.
+Maintenant utilisé seulement pour le margin et l'espacement. */
+
+.RightNavBar{
+	color:white;
+    margin-left: 25px;
+	margin-right: 25px;
+}
+
+.CurrentRightNavBar{
+    margin-left: 25px;
+	margin-right: 25px;
+	color:rgb(131, 21, 21); 
+}
+
+/* Padding top test : environ 250px */
+
+
+/* Paramètres de placement du "main", aka pour mettre les texts au milieu*/
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: #EDEDED;
+	margin: 0 10%;
+	padding: 0 5%;
+	padding-top:60px;
+}
+  
+article {
+	display: flex;
+	flex-direction: column;
+}
+  
+section{
+	border-top: 3px solid #7aa125;
+}
+  
+/* Colorisation des liens*/
+
+a:link {
+	color: #F2B33D;
+}
+  
+a:visited {
+	color: #d62020;
+}
+
+
+/* Du padding pour l'image de mini Bio */
+
+img{
+	float: left;
+	padding-right:20px;
+}
+
+/* Paramètres du footer */ 
+footer{ 
+	font-family: Monserrat, sans-serif;
+	display: flex;
+	background-color: black;
+	color: #b4cf1b;
+	right: auto;
+	left: auto;
+	bottom: auto;
+	text-align:center;
+
+}
+
+
+/* Paramètres et alignement de la galerie et titres photos*/
+
+.MiddleTitle{
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+
+#Galerie{
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+
+}
+
+
+/* Barre de séparation des galeries*/
+
+.SeparateBar{
+    width: 90%;
+    margin-top: 100px;
+    border: 2px solid rgb(0, 0, 0);
+}
