@@ -1,4 +1,4 @@
-﻿/* Une petite pitié pour nos yeux */
+/* Une petite pitié pour nos yeux */
 
 html{
     scroll-behavior: smooth;
@@ -9,74 +9,73 @@ html{
 
 /* Paramètres du Background */
 
+li{
+	margin:0;
+}
+
+header{
+	margin-left:0;
+}
 
 body{
     background-color: rgb(16, 22, 83);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100%;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Montserrat-Bold',sans-serif;
 	font-size:12px;
-}
-
-#NavBar{
-	color: rgb(216, 216, 216);
-	margin-left: 10px;
-}
-
-/*paramètre du titre du site*/
-
-.SiteTitle{
-	font-family: 'Montserrat',sans-serif;
-
+	margin:0;
 }
 
 /* Paramètres du menu Nav horizontal */
 
-header{
-    background-color: rgb(0, 0, 0);
-}
 
 .NavBarSettings{
-    position: fixed;
-    display: flex;
-	text-align:center;
-    background-color: rgb(0, 0, 0);
-    right: 10%;
-	left: 10%;
+	float:center;
+	position: sticky;
 	top: 0px;
+	display: block;
+	text-align:center;
+	background-color: rgb(0, 0, 0);
+	color:white;
 	flex-direction: row;
+	font-size: large;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-left: 8%;
+	margin-right: 8%;
 }
 
-.NavMenuTitleLeft{
-    display: flex;
-	text-align: center;
-	flex-direction: row;
-    color: rgb(216, 216, 216);
-	justify-content: flex-end;
-
+.NavContent{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 9px;
+	padding-bottom: 8px;
 }
 
-.NavMenuTitleRight{
-    display: flex;
-	text-align: center;
-	flex-direction: row;
-    color: rgb(216, 216, 216);
-	justify-content: space-around;
+.NavContentTitle{
+	margin-right: 50%;
+	margin-left: 0%;
+	padding-top: 9px;
+	padding-bottom: 8px;
 }
 
-/*Paramètre nav verticale*/
+a:hover{
+	background-color: purple;
+}
+
+/*Paramètre nav verticale  INUTILISEE*/
 
 .VertNavSettings{
-	display:flex;
-	text-align: center;
+	float:center;
+	position: sticky;
+	display: block;
+	text-align:center;
+	background-color: rgb(0, 0, 0);
+	color:white;
 	flex-direction: column;
-	left: 10%;
-	top: 80px;
-	padding: 10px;
-	width: 60px;
-	background-color: black;
-	font-size: 10px;
+	padding: 14px;
+	top:0;
 }
 
 .VertMenu{
@@ -85,58 +84,45 @@ header{
 	color:white;
 }
 
-
-/* Ancien système pour faire apparaitre le lien, devait mettre current nav bar sur le menu sur laquelle on
-y était actuellement pour chaque page. remplacé par les liens plus bas.
-Maintenant utilisé seulement pour le margin et l'espacement. */
-
-.RightNavBar{
-	color:white;
-    margin-left: 25px;
-	margin-right: 25px;
-}
-
-.CurrentRightNavBar{
-    margin-left: 25px;
-	margin-right: 25px;
-	color:rgb(131, 21, 21); 
-}
-
-/* Padding top test : environ 250px */
-
-
 /* Paramètres de placement du "main", aka pour mettre les texts au milieu*/
 
 main {
-	display: flex;
-	flex-direction: column;
 	background-color: #EDEDED;
-	margin: 0 10%;
-	padding: 0 5%;
-	padding-top:60px;
+	margin-left: 8%;
+	margin-right:8%;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-top:1%;
 }
   
-article {
+section.article {
 	display: flex;
 	flex-direction: column;
 }
-  
-section{
-	border-top: 3px solid #7aa125;
+
+/*Paramètre pour la barre sur le côté gauche*/
+
+section.SideContent{
+	margin-left: 8%;
+	background-color: black;
+	margin-right: 70%;
+	margin-top: 0;
+	margin-bottom:0;
+	font-family: 'Montserrat-Bold',sans-serif;
 }
   
 /* Colorisation des liens*/
 
 a:link {
-	color: #F2B33D;
+	color:white;
 }
   
 a:visited {
-	color: #d62020;
+	color:white;
 }
 
 
-/* Du padding pour l'image de mini Bio */
+/* Du padding pour les images*/
 
 img{
 	float: left;
@@ -146,13 +132,15 @@ img{
 /* Paramètres du footer */ 
 footer{ 
 	font-family: Monserrat, sans-serif;
-	display: flex;
 	background-color: black;
-	color: #b4cf1b;
-	right: auto;
-	left: auto;
-	bottom: auto;
+	color:white;
+	margin: 0;
 	text-align:center;
+	font-size:large;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 8%;
+	margin-right: 8%;
 
 }
 
@@ -173,13 +161,4 @@ footer{
 	align-items: center;
 	padding: 10px;
 
-}
-
-
-/* Barre de séparation des galeries*/
-
-.SeparateBar{
-    width: 90%;
-    margin-top: 100px;
-    border: 2px solid rgb(0, 0, 0);
 }
