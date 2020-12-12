@@ -1,4 +1,4 @@
-/* Une petite pitié pour nos yeux */
+﻿/* Une petite pitié pour nos yeux */
 
 html{
     scroll-behavior: smooth;
@@ -36,8 +36,8 @@ body{
 	float:center;
 	position: sticky;
 	top: 0px;
-	display: block;
 	text-align:center;
+	display: block;
 	background-color: black;
 	color:white;
 	flex-direction: row;
@@ -97,6 +97,10 @@ h3{
 	font-size:24px;
 }
 
+.capitalization{
+	text-transform: capitalize;
+}
+
 main {
 	background-color: #01041bd8;
 	margin-left: 8%;
@@ -113,7 +117,7 @@ article {
 	font-size: large;
 }
 
-/*Paramètre pour la barre sur le côté gauche*/
+/*Paramètre pour la barre sur le côté gauche INUTILISEE ET MORT.*/
 
 SideContent{
 	margin-left: 8%;
@@ -135,14 +139,15 @@ a:visited {
 }
 
 
-/* Du padding pour les images*/
+/* Paramètres padding pour les images*/
 
 img{
 	float: left;
-	padding-right:20px;
+	padding:10px;
 }
 
-/* Paramètres du footer */ 
+/* Paramètres du footer */
+
 footer{ 
 	font-family: Monserrat, sans-serif;
 	background-color: black;
@@ -152,9 +157,15 @@ footer{
 	font-size:large;
 	padding-top: 2px;
 	padding-bottom: 2px;
+	margin-bottom:0;
 	margin-left: 8%;
 	margin-right: 8%;
+}
 
+/* tentative de placement du lien discord dans le footer*/
+
+.DiscordLink {
+	margin-left:14%;
 }
 
 
@@ -167,13 +178,22 @@ footer{
     text-align: center;
 }
 
+/*Juste pour avoir le à majuscule*/
+
+.MiddleTitleCap{
+    color: white(0, 0, 0, 0.8);
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+	text-align: center;
+	text-transform: capitalize;
+}
+
 
 #Galerie{
     display: flex;
     justify-content: space-around;
 	align-items: center;
 	padding: 10px;
-
 }
 
 /*Paramètre du "bouton" dans l'accueil*/
